@@ -1,0 +1,47 @@
+
+.masterHeader {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.masterHeaderRow1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.masterHeaderRow2 {
+    display: flex;
+    justify-content: center; 
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+}
+
+.headerLogoImg {
+    height: 40px; 
+}
+
+.navButton {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.navButton:hover {
+    background-color: #f4f4f4;
+}
+
+.appMainContent {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 100px); 
+}

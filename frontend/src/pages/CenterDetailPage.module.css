@@ -1,0 +1,211 @@
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding-bottom: 40px;
+}
+
+.heroSection {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 24px;
+}
+
+.coverImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-color: #e5e7eb;
+}
+
+.centerInfo {
+  max-width: 1200px;
+  margin: -40px auto 0; 
+  padding: 0 24px;
+  position: relative;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.address {
+  font-size: 15px;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.phone {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+.mainLayout {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.courtList {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 500px;
+  margin-bottom: 16px;
+}
+
+.sidebarTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.courtItem {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.courtItem:hover { border-color: #a5b4fc; background-color: #f5f7ff; }
+
+.courtItemActive {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+  box-shadow: 0 0 0 1px #6366f1;
+}
+
+.courtName { font-weight: 600; font-size: 14px; color: #1f2937; }
+.courtPrice { font-size: 13px; color: #6b7280; margin-top: 2px; }
+
+.bookBtnSidebar {
+  width: 100%;
+  padding: 14px;
+  background-color: #4f46e5; 
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+}
+
+.bookBtnSidebar:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(79, 70, 229, 0.3);
+}
+
+.bookBtnSidebar:disabled {
+  background-color: #a5a6f6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+/* Khu vực Lịch */
+.calendarSection {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.dateBar {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarContainer {
+  height: 600px;
+  overflow-y: auto;
+}
+
+.calendarTable { width: 100%; border-collapse: collapse; }
+.calendarRow { height: 80px; } 
+
+.timeLabel {
+  width: 60px; text-align: center; color: #9ca3af; font-size: 12px;
+  border-right: 1px solid #f3f4f6; border-bottom: 1px solid #f3f4f6;
+  vertical-align: top; padding-top: 8px;
+}
+
+.cell { border-bottom: 1px solid #f3f4f6; padding: 2px; vertical-align: top; }
+
+
+.bookingBlock {
+  height: 100%;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 12px;
+  color: white;
+  background-color: #9ca3af; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockBusy { 
+    background-color: #ef4444; 
+    border-left: 4px solid #b91c1c; 
+}
+
+.blockUnpaid {
+    background-color: #eab308; 
+    border-left: 4px solid #a16207; 
+    color: #fff; 
+}
+
+.blockMy { 
+    background-color: #10b981; 
+    border-left: 4px solid #059669; 
+}
+
+.legend {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #6b7280;
+}
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; }

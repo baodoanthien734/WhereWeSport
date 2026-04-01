@@ -1,0 +1,114 @@
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  border-bottom: 2px dashed #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Chi tiết hóa đơn */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #374151;
+}
+
+.label { color: #6b7280; }
+.value { font-weight: 600; text-align: right; }
+
+/* Tổng tiền */
+.totalSection {
+  background-color: #f0fdf4; /* Xanh nhạt */
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border: 1px solid #bbf7d0;
+}
+
+.totalLabel { font-size: 16px; font-weight: 600; color: #166534; }
+.totalPrice { font-size: 24px; font-weight: 800; color: #16a34a; }
+
+/* Nút bấm */
+.btnPay {
+  width: 100%;
+  padding: 14px;
+  background-color: #005baa; /* Màu xanh VNPAY */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 91, 170, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btnPay:hover {
+  background-color: #004c8c;
+  transform: translateY(-2px);
+}
+
+.btnPay:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btnBack {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+}
+.btnBack:hover { background-color: #f9fafb; }

@@ -1,0 +1,21 @@
+CREATE DATABASE WhereWeSport;
+GO
+USE WhereWeSport;
+GO
+
+CREATE TABLE Users (
+    user_id INT IDENTITY(1,1) PRIMARY KEY,
+    username NVARCHAR(50) NOT NULL UNIQUE,
+    email NVARCHAR(100) NOT NULL UNIQUE,
+    passwordHash NVARCHAR(255) NOT NULL,
+    createdAt DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE EmailVerification (
+    Email VARCHAR(100) PRIMARY KEY,
+    OtpCode VARCHAR(10) NOT NULL,
+    ExpiresAt DATETIME2 NOT NULL,
+    IsVerified BIT NOT NULL DEFAULT 0
+);
+
+

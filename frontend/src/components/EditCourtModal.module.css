@@ -1,0 +1,57 @@
+/* Dùng lại style cơ bản của AddCourtModal */
+.overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; justify-content: center; align-items: center; z-index: 1000;
+}
+
+.modal {
+  background: white; padding: 30px; border-radius: 12px;
+  width: 90%; max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 20px; font-weight: 700; color: #1f2937; margin-bottom: 20px; text-align: center;
+}
+
+.formGroup { margin-bottom: 16px; }
+.label { display: block; font-size: 14px; font-weight: 500; color: #374151; margin-bottom: 6px; }
+.input, .select {
+  width: 100%; padding: 10px; border: 1px solid #d1d5db;
+  border-radius: 6px; font-size: 14px; outline: none;
+}
+.input:focus, .select:focus { border-color: #4f46e5; }
+
+/* Khu vực nút bấm */
+.actions {
+  display: flex; justify-content: space-between; /* Đẩy nút Xóa sang trái, Lưu sang phải */
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.rightActions { display: flex; gap: 12px; }
+
+.btnCancel {
+  padding: 10px 20px; border: 1px solid #d1d5db; background: white;
+  color: #374151; border-radius: 6px; cursor: pointer; font-weight: 500;
+}
+.btnCancel:hover { background: #f3f4f6; }
+
+.btnSubmit {
+  padding: 10px 20px; background: #4f46e5; color: white;
+  border: none; border-radius: 6px; cursor: pointer; font-weight: 500;
+}
+.btnSubmit:hover { background: #4338ca; }
+
+/* Nút Xóa (Màu đỏ) */
+.btnDelete {
+  padding: 10px 16px; background: #fee2e2; color: #dc2626;
+  border: 1px solid #fecaca; border-radius: 6px; cursor: pointer; font-weight: 500;
+  font-size: 13px;
+}
+.btnDelete:hover { background: #fecaca; }
+
+.error { color: #dc2626; background-color: #fee2e2; padding: 10px; border-radius: 6px; margin-bottom: 16px; }
